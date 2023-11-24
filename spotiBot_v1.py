@@ -97,6 +97,10 @@ elif mode == "auto":
         playlist_name = get_custom_playlist_name()
     else:
         playlist_name = "Podcasts & Songs Daily Mix"
+
+    # Run the initial update before entering the scheduling loop
+    update_playlist()
+
     # Get the user's country from Spotify
     user_info = sp.current_user()
     country_code = user_info['country']
