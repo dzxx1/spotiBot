@@ -1,7 +1,6 @@
-
 # Spotibot Documentation
 
-_Prouly made using ChatGPT_
+_Proudly made using ChatGPT_
 
 ## Introduction
 
@@ -11,11 +10,11 @@ Spotibot is a Python script that automates the creation and updating of a Spotif
 
 1. [Installation](#installation)
 2. [Configuration](#configuration)
-3. [Usage](#usage)
-4. [Main Components](#main-components)
-5. [Scheduled Updates](#scheduled-updates)
-6. [Error Handling](#error-handling)
-7. [Liked Podcasts](#liked-podcasts)
+3. [Liked Podcasts](#liked-podcasts)  <!-- Updated suggestion -->
+4. [Usage](#usage)
+5. [Main Components](#main-components)
+6. [Scheduled Updates](#scheduled-updates)
+7. [Error Handling](#error-handling)
 8. [Requirements](#requirements)
 9. [Contributing](#contributing)
 10. [License](#license)
@@ -52,7 +51,7 @@ Now you're all set to use Spotibot!
 
 ## Configuration
 
-Spotibot uses two configuration files: `config.ini` and `secrets.ini`. Make sure to set up these files before running the script.
+Spotibot uses two configuration files: `config.ini` and `secrets.ini`. __Make sure to set up these files before running the script.__
 
 ### `config.ini`
 
@@ -65,12 +64,22 @@ Spotibot uses two configuration files: `config.ini` and `secrets.ini`. Make sure
   - `DEBUG_MODE`: Set to `True` for debugging (optional).
 
 - **Podcasts Section**
-  - Configure the podcasts you are interested in under the `[Podcasts]` section.
+  - Configure the podcasts you are interested in having updated in the playlist under the `[Podcasts]` section.
 
 ### `secrets.ini`
 
 - **Spotify Section**
   - Set your Spotify API credentials in this section.
+
+## Get Liked Podcasts<a name="liked-podcasts"></a>
+
+Before running the main script, it's a good idea to know the names of your liked podcasts. You can use the `getLikedPodcasts.py` script to retrieve this information. Run the following command:
+
+```bash
+python getLikedPodcasts.py
+```
+
+The script will save the names of your liked podcasts to a text file (`liked_podcasts.txt`). You can use this list to easily configure your playlist in the `config.ini`
 
 ## Usage
 
@@ -116,16 +125,6 @@ Spotibot supports both manual and automatic updates. In automatic mode, the scri
 
 Any errors that occur during the playlist update are logged in the `spotibot.log` file.
 
-## Liked Podcasts<a name="liked-podcasts"></a>
-
-Use the `liked_podcasts.py` script to retrieve your liked podcasts. Run the following command:
-
-```bash
-python liked_podcasts.py
-```
-
-The script will save liked podcasts to a text file (`liked_podcasts.txt`). You can use this list to select podcasts for the playlist configuration.
-
 ## Requirements<a name="requirements"></a>
 
 Spotibot requires the following dependencies:
@@ -140,4 +139,6 @@ Make sure to install these dependencies before running the script.
 
 
 ## License<a name="license"></a>
+```
 
+Feel free to let me know if you have any other requests or if there's anything else you'd like to add or modify!
