@@ -1,0 +1,4 @@
+spotipy
+schedule
+pytz
+python-decouple
