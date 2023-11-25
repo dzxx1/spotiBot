@@ -15,9 +15,8 @@ Spotibot is a Python script that automates the creation and updating of a Spotif
 5. [Main Components](#main-components)
 6. [Scheduled Updates](#scheduled-updates)
 7. [Error Handling](#error-handling)
-8. [Requirements](#requirements)
-9. [Contributing](#contributing)
-10. [License](#license)
+8. [Contributing](#contributing)
+9. [License](#license)
 
 ## Installation
 
@@ -125,20 +124,9 @@ Spotibot supports both manual and automatic updates. In automatic mode, the scri
 
 Any errors that occur during the playlist update are logged in the `spotibot.log` file.
 
-## Requirements<a name="requirements"></a>
-
-Spotibot requires the following dependencies:
-
-- [Spotipy](https://spotipy.readthedocs.io/en/2.18.0/)
-- [python-decouple](https://pypi.org/project/python-decouple/)
-- [schedule](https://schedule.readthedocs.io/en/stable/)
-
-Make sure to install these dependencies before running the script.
 
 ## Contributing<a name="contributing"></a>
 
-
 ## License<a name="license"></a>
-```
 
-Feel free to let me know if you have any other requests or if there's anything else you'd like to add or modify!
+
