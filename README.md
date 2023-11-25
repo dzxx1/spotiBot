@@ -22,16 +22,33 @@ Spotibot is a Python script that automates the creation and updating of a Spotif
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/dzxx1/spotibot.git
-   cd spotibot
-   ```
+### 1. Clone the repository:
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+git clone https://github.com/dzxx1/spotibot.git
+cd spotibot
+```
+
+### 2. Install dependencies:
+
+Before running Spotibot, make sure to install the required dependencies. You can do this by running:
+
+```bash
+pip install -r config/requirements.txt
+```
+
+The `requirements.txt` file, located in the `config` folder, includes the following dependencies:
+
+```plaintext
+spotipy
+schedule
+pytz
+python-decouple
+```
+
+Make sure to execute this command in your virtual environment or the environment where you plan to run Spotibot.
+
+Now you're all set to use Spotibot!
 
 ## Configuration
 
